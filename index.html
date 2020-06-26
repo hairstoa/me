@@ -7,13 +7,12 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Quicksand|Roboto+Slab&display=swap" rel="stylesheet">
-
   </head>
 
   <body>
     <div class="navBarTop">
         <a href="index.html"><img class="NyokiIcon" src="images/NyokiIcon.png" alt="MyDog"></a>
-        <a class="header-link" href="resume/2020_AH_Resume.pdf" download>RESUME</a>
+        <a class="header-link" href="resume/2020_AH_Resume.pdf" target="_blank">RESUME</a>
         <a class="header-link" href="mailto:adriane.hairston@gmail.com">CONTACT</a>
     </div>
 
@@ -36,15 +35,27 @@
 
       <div class="skills">
         <h2>What can I do for you?</h2>
-        <div class="skill-row">
-          <img class="computer-image" src="images/LaptopIcon.png" alt="laptop">
-          <h3>Development</h3>
-          <p>I am currently a student at Oregon State University working towards a Computer Science Degree.</p>
-        </div>
-        <div class="skill-row">
-          <img class="artist-image" src="images/PaintIcon.png" alt="art-tools">
-          <h3>Design / Illustration </h3>
-          <p> I love to draw and have previously illustrated children's books! </p>
+        <div class="skill-grid">
+          <div>
+            <img class="computer-image" src="images/LaptopIcon.png" alt="laptop">
+          </div>
+          <div>
+            <h3>Development</h3>
+            <p>I am currently a student at Oregon State University working towards a Computer Science Degree.</p>
+          </div>
+          <div>
+            <img class="artist-image" id="hidden1" src="images/PaintIcon.png" alt="art-tools">
+          </div>
+          <div>
+            <img class="computer-image" id="hidden2" src="images/LaptopIcon.png" alt="laptop">
+          </div>
+          <div>
+            <h3>Design / Illustration</h3>
+            <p> I love to draw and have previously illustrated children's books!</p>
+          </div>
+          <div>
+            <img class="artist-image" src="images/PaintIcon.png" alt="art-tools">
+          </div>
         </div>
       </div>
 
@@ -62,8 +73,9 @@
     <div class="bottom-container">
       <a class="footer-link" href="https://github.com/hairstoa">GitHub</a>
       <a class="footer-link" href="https://cargocollective.com/AdrianeHairston">Portfolio</a>
-      <a class="footer-link" href="https://www.youtube.com/watch?v=ofDyo4KrUHk">Surprise Me</a>
+      <a class="footer-link" id="surprise" href="https://www.youtube.com/watch?v=ofDyo4KrUHk" target="_blank">Surprise Me</a>
       <p>© 2020 Adriane Hairston</p>
     </div>
+    <script src="js/index.js" charset="utf-8"></script>
   </body>
 </html>
