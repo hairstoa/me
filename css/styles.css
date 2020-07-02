@@ -10,7 +10,7 @@ a{
 }
 h1{
   color: #76B7C7;
-  margin: 50px auto 0 auto;
+  margin: 50px auto;
   font-family: 'Liu Jian Mao Cao', cursive;
   font-size: 5.625rem;
 }
@@ -34,7 +34,7 @@ p{
   line-height: 2.0;
 }
 .artist-image{
-  width: 60%;
+  width: 70%;
 }
 .bottom-container{
   background-color: #4f5686;
@@ -57,10 +57,14 @@ p{
   color: #76B7C7;
 }
 .computer-image{
-  width: 60%;
+  width: 70%;
 }
 .footer-link{
   color: white;
+}
+.gallery{
+  max-width: 480px;
+  margin: 50px auto;
 }
 .header-link{
   color: white;
@@ -68,6 +72,13 @@ p{
 }
 .header-link:hover{
   color: #4f5686;
+}
+.main-img img{
+  border: #808080 solid 5px;
+}
+.main-img img,
+.thumbnails img{
+  width: 100%;
 }
 .middle-container{
   padding: 25px;
@@ -85,7 +96,7 @@ p{
 }
 .NyokiIcon{
   width: 75px;
-  position:absolute;
+  position: absolute;
   left: 10%;
   top: 5px;
 }
@@ -101,4 +112,9 @@ p{
 }
 .skills{
   text-align: center;
+}
+.thumbnails{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 5px;
 }
